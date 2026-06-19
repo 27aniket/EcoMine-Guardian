@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen bg-gradient-to-br from-forest-green/90 to-lime-green/80 overflow-hidden">
+    <section className="relative w-full h-screen bg-linear-to-br from-forest-green/90 to-lime-green/80 overflow-hidden">
       {/* Background Image Overlay */}
       <div
         className="absolute inset-0 z-0"
@@ -76,7 +76,6 @@ const Hero = () => {
           animate="visible"
           className="max-w-5xl mx-auto text-center text-white space-y-8"
         >
-        
           <motion.h1
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight font-serif"
@@ -97,6 +96,16 @@ const Hero = () => {
             restoration, continuous monitoring, and long-term ecological impact
             assessment for a greener and more sustainable future.
           </motion.p> */}
+
+          <motion.p
+            variants={itemVariants}
+            className="text-lg sm:text-xl lg:text-2xl text-white max-w-6xl mx-auto leading-relaxed font-serif"
+          >
+            EcoMine Guardian delivers intelligent tree plantation, QR-based
+            monitoring, and GIS-powered mapping solutions to transform reclaimed
+            coal mining areas into thriving green ecosystems for a more
+            sustainable future.
+          </motion.p>
 
           {/* Stats Preview */}
           {/* <motion.div

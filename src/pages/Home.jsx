@@ -1,7 +1,3 @@
-/**
- * Home Page
- * Main landing page combining all sections
- */
 
 import {
   Hero,
