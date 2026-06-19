@@ -11,7 +11,7 @@ const Navigation = () => {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "About", href: "#intent" },
+    { label: "Our Offer", href: "#intent" },
     { label: "Monitoring", href: "#monitoring" },
 //     { label: "Gallery", href: "#gallery" },
 //     { label: "Statistics", href: "#external" },

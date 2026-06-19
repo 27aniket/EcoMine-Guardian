@@ -46,12 +46,12 @@ const Footer = () => {
 
   const ContactSection = ({ office, isUk }) => (
     <motion.div variants={itemVariants} className="space-y-6">
-      <h3 className="text-2xl font-bold text-gray-900">{office.name}</h3>
+      {/* <h3 className="text-2xl font-bold text-gray-900">{office.name}</h3> */}
 
       {/* Address */}
       <div className="flex items-start space-x-3">
         <MapPin className="w-5 h-5 text-forest-green mt-1 shrink-0" />
-        <p className="text-gray-600">{office.name}</p>
+        <h3 className="text-forest-green font-bold text-2xl ">{office.name}</h3>
       </div>
 
       {/* Emails */}
@@ -62,7 +62,7 @@ const Footer = () => {
             href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email.trim()}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 text-gray-600 hover:text-green-700"
+            className="flex items-center space-x-3 text-white hover:text-green-700"
           >
             <Mail className="w-5 h-5 shrink-0 group-hover:scale-110 transition-transform" />
             <span>{email.trim()}</span>
@@ -76,7 +76,7 @@ const Footer = () => {
           <a
             key={idx}
             href={`tel:${phone.replace(/\D/g, "")}`}
-            className="flex items-center space-x-3 text-gray-600 hover:text-forest-green transition-colors group"
+            className="flex items-center space-x-3 text-white hover:text-forest-green transition-colors group"
           >
             <Phone className="w-5 h-5 shrink-0 group-hover:scale-110 transition-transform" />
             <span>{phone}</span>
@@ -163,7 +163,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+    <footer className="bg-gray-800 text-white pt-16 pb-8">
       {/* Contact Section */}
       <motion.div
         id="contact"
@@ -177,7 +177,7 @@ const Footer = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
             Get In Touch
           </h2>
-          <p className="text-gray-400 text-lg mb-12">
+          <p className="text-white text-lg mb-12">
             Contact our offices worldwide
           </p>
         </div>
@@ -220,8 +220,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Coal Mine Afforestation
-              Monitoring. All rights reserved.
+              &copy; {new Date().getFullYear()} Intent to solution. All rights reserved.
             </p>
           </div>
 

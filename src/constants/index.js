@@ -58,6 +58,11 @@ export const OFFICES = {
         lat: 25.5941,
         lng: 85.1376,
       },
+      {
+        name: "Jharkhand",
+        lat: 23.3441,
+        lng: 85.3096,
+      },
     ],
   },
 };

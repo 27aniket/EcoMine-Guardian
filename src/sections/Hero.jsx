@@ -40,7 +40,7 @@ const Hero = () => {
           backgroundImage: `url(${heroBg})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          opacity: 0.3,
+          opacity: 0.4,
         }}
       />
 
@@ -86,7 +86,7 @@ const Hero = () => {
           </motion.h1>
 
           {/* Subheading */}
-          <motion.p
+          {/* <motion.p
             variants={itemVariants}
             className="text-lg sm:text-xl lg:text-2xl text-shadow-white max-w-3xl mx-auto leading-relaxed font-serif"
           >
@@ -96,7 +96,7 @@ const Hero = () => {
             technology with sustainability, we enable efficient environmental
             restoration, continuous monitoring, and long-term ecological impact
             assessment for a greener and more sustainable future.
-          </motion.p>
+          </motion.p> */}
 
           {/* Stats Preview */}
           {/* <motion.div
@@ -122,7 +122,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center pt-6"
+            className="flex flex-col sm:flex-row gap-6 justify-center mt-30"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
