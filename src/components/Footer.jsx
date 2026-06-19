@@ -50,8 +50,8 @@ const Footer = () => {
 
       {/* Address */}
       <div className="flex items-start space-x-3">
-        <MapPin className="w-5 h-5 text-forest-green mt-1 shrink-0" />
-        <h3 className="text-forest-green font-bold text-2xl ">{office.name}</h3>
+        <MapPin className="w-5 h-5 text-lime-500 mt-1 shrink-0" />
+        <h3 className="text-lime-500 font-bold text-2xl ">{office.name}</h3>
       </div>
 
       {/* Emails */}
@@ -62,7 +62,7 @@ const Footer = () => {
             href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email.trim()}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 text-white hover:text-green-700"
+            className="flex items-center space-x-3 text-white hover:text-lime-500"
           >
             <Mail className="w-5 h-5 shrink-0 group-hover:scale-110 transition-transform" />
             <span>{email.trim()}</span>
@@ -76,7 +76,7 @@ const Footer = () => {
           <a
             key={idx}
             href={`tel:${phone.replace(/\D/g, "")}`}
-            className="flex items-center space-x-3 text-white hover:text-forest-green transition-colors group"
+            className="flex items-center space-x-3 text-white hover:text-lime-500 transition-colors group"
           >
             <Phone className="w-5 h-5 shrink-0 group-hover:scale-110 transition-transform" />
             <span>{phone}</span>
@@ -174,7 +174,7 @@ const Footer = () => {
         viewport={{ once: true, amount: 0.1 }}
       >
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-lime-500">
             Get In Touch
           </h2>
           <p className="text-white text-lg mb-12">
@@ -209,7 +209,7 @@ const Footer = () => {
 
                 {/* Text */}
                 <div className="flex flex-col leading-tight">
-                  <span className="text-lg font-bold text-green-700 group-hover:text-lime-500 transition-colors">
+                  <span className="text-lg font-bold text-lime-500  transition-colors">
                     Intent to Solution
                   </span>
 
@@ -220,7 +220,8 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Intent to solution. All rights reserved.
+              &copy; {new Date().getFullYear()} Intent to solution. All rights
+              reserved.
             </p>
           </div>
 
