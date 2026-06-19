@@ -1,7 +1,4 @@
-/**
- * Hero Section
- * Landing page hero with call-to-action buttons
- */
+
 
 import { motion } from "framer-motion";
 import { ChevronDown, Leaf, ArrowRight } from "lucide-react";
@@ -43,7 +40,7 @@ const Hero = () => {
           backgroundImage: `url(${heroBg})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          opacity: 0.4,
+          opacity: 0.3,
         }}
       />
 
@@ -79,21 +76,7 @@ const Hero = () => {
           animate="visible"
           className="max-w-5xl mx-auto text-center text-white space-y-8"
         >
-          {/* Logo Animation */}
-          {/* <motion.div
-            variants={itemVariants}
-            className="flex justify-center mb-6"
-          >
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border-2 border-white/30"
-            >
-              <Leaf className="w-12 h-12 text-lime-green" />
-            </motion.div>
-          </motion.div> */}
-
-          {/* Main Heading */}
+        
           <motion.h1
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight font-serif"
@@ -105,7 +88,7 @@ const Hero = () => {
           {/* Subheading */}
           <motion.p
             variants={itemVariants}
-            className="text-lg sm:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg sm:text-xl lg:text-2xl text-shadow-white max-w-3xl mx-auto leading-relaxed font-serif"
           >
             EcoMine Guardian delivers intelligent tree plantation, QR-based
             monitoring, and GIS-powered mapping solutions to transform reclaimed
