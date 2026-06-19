@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Tree Monitoring System</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f8f4;
+}
+
+.hero{
+background:linear-gradient(135deg,#0f9d58,#34c759);
+color:white;
+padding:40px 20px;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:350px;
+height:350px;
+background:rgba(255,255,255,.08);
+border-radius:50%;
+top:-100px;
+right:-100px;
+}
+
+.hero img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:6px solid white;
+object-fit:cover;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.hero h1{
+margin-top:15px;
+font-size:34px;
+}
+
+.hero h3{
+font-weight:400;
+opacity:.9;
+}
+
+.badge{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:white;
+color:#0f9d58;
+font-weight:bold;
+border-radius:30px;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+padding:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card i{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.card h2{
+font-size:28px;
+margin-top:10px;
+color:#0f9d58;
+}
+
+.card p{
+color:#666;
+}
+
+.section-title{
+margin:30px 0 15px;
+font-size:28px;
+color:#0f9d58;
+}
+
+.info{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.info-box{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.info-box h3{
+color:#0f9d58;
+margin-bottom:15px;
+}
+
+.info-box p{
+padding:8px 0;
+border-bottom:1px solid #eee;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+th{
+background:#0f9d58;
+color:white;
+padding:15px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.footer{
+background:#0f9d58;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#0f9d58;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+.health{
+font-size:22px;
+font-weight:bold;
+color:#0f9d58;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<img src="tree.jpg" alt="Tree Photo">
+
+<h1>🌳 Maha Neem</h1>
+
+<h3>Azadirachta indica</h3>
+
+<div class="badge">
+Health Score : 96% Excellent
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Environmental Impact</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fas fa-leaf" style="color:#2ecc71;"></i>
+<h2>12.8 KG</h2>
+<p>CO₂ Absorbed / Year</p>
+</div>
+
+<div class="card">
+<i class="fas fa-wind" style="color:#3498db;"></i>
+<h2>18.2 KG</h2>
+<p>O₂ Generated / Year</p>
+</div>
+
+<div class="card">
+<i class="fas fa-tree" style="color:#27ae60;"></i>
+<h2>6.3 Sqm</h2>
+<p>Shade Coverage</p>
+</div>
+
+<div class="card">
+<i class="fas fa-earth-asia" style="color:#f39c12;"></i>
+<h2>Gold</h2>
+<p>Carbon Rating</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Tree Information</h2>
+
+<div class="info">
+
+<div class="info-box">
+<h3>🌳 Basic Details</h3>
+
+<p><b>Tree ID :</b> CCL-PLT-0001</p>
+<p><b>Name :</b> Maha Neem</p>
+<p><b>Scientific Name :</b> Azadirachta indica</p>
+<p><b>Type :</b> Medicinal & Shade Tree</p>
+<p><b>Use :</b> Air Purification & Soil Improvement</p>
+<p><b>Plantation Date :</b> 15 June 2026</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>📍 GIS Location</h3>
+
+<p><b>Latitude :</b> 24.001245</p>
+<p><b>Longitude :</b> 85.367842</p>
+<p><b>Village :</b> Piparwar</p>
+<p><b>District :</b> Chatra</p>
+<p><b>State :</b> Jharkhand</p>
+
+<a class="btn" href="#">
+🗺 View on Google Map
+</a>
+
+</div>
+
+</div>
+
+<h2 class="section-title">Annual Growth Monitoring</h2>
+
+<table>
+
+<tr>
+<th>Year</th>
+<th>Height</th>
+<th>CO₂</th>
+<th>O₂</th>
+<th>Shade</th>
+</tr>
+
+<tr>
+<td>2026</td>
+<td>8 ft</td>
+<td>5 Kg</td>
+<td>7 Kg</td>
+<td>3 Sqm</td>
+</tr>
+
+<tr>
+<td>2027</td>
+<td>11 ft</td>
+<td>9 Kg</td>
+<td>12 Kg</td>
+<td>5 Sqm</td>
+</tr>
+
+<tr>
+<td>2028</td>
+<td>14 ft</td>
+<td>15 Kg</td>
+<td>20 Kg</td>
+<td>8 Sqm</td>
+</tr>
+
+</table>
+
+<h2 class="section-title">Coal Mining Area Benefits</h2>
+
+<div class="grid">
+
+<div class="card">
+<h2>🌫</h2>
+<p>Dust Reduction : High</p>
+</div>
+
+<div class="card">
+<h2>🌱</h2>
+<p>Soil Stabilization : High</p>
+</div>
+
+<div class="card">
+<h2>💧</h2>
+<p>Ground Water Recharge : Medium</p>
+</div>
+
+<div class="card">
+<h2>🦋</h2>
+<p>Biodiversity Improvement : Excellent</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Photo Monitoring Timeline</h2>
+
+<div class="gallery">
+
+<img src="before.jpg" alt="">
+<img src="plantation.jpg" alt="">
+<img src="growth.jpg" alt="">
+<img src="drone.jpg" alt="">
+
+</div>
+
+<h2 class="section-title">CSR Project Dashboard</h2>
+
+<div class="grid">
+
+<div class="card">
+<h2>50,000+</h2>
+<p>Total Trees</p>
+</div>
+
+<div class="card">
+<h2>94%</h2>
+<p>Survival Rate</p>
+</div>
+
+<div class="card">
+<h2>350 Acres</h2>
+<p>Area Covered</p>
+</div>
+
+<div class="card">
+<h2>850 Tons</h2>
+<p>CO₂ Sequestered</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<h2>Intent to Solution Pvt Ltd (I2S)</h2>
+
+<p>Smart Plantation | GIS Monitoring | Carbon Credit Platform</p>
+
+</div>
+
+</body>
+</html>

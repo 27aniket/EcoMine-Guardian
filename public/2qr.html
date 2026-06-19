@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌳 Tree Digital Passport</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#e8f5e9,#c8e6c9);
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.header{
+background:linear-gradient(135deg,#2e7d32,#4caf50);
+color:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.header h1{
+font-size:38px;
+}
+
+.header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-top:20px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.section-title{
+color:#2e7d32;
+font-size:24px;
+margin-bottom:15px;
+border-left:6px solid #4caf50;
+padding-left:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.info-box{
+background:#f1f8e9;
+padding:15px;
+border-radius:15px;
+transition:.3s;
+}
+
+.info-box:hover{
+transform:translateY(-5px);
+}
+
+.info-box i{
+font-size:28px;
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+.info-box h3{
+font-size:16px;
+color:#555;
+}
+
+.info-box p{
+font-size:20px;
+font-weight:bold;
+color:#222;
+margin-top:5px;
+}
+
+.tree-photo{
+width:100%;
+border-radius:20px;
+height:350px;
+object-fit:cover;
+}
+
+.status{
+display:inline-block;
+padding:8px 20px;
+background:#4caf50;
+color:white;
+border-radius:30px;
+font-weight:bold;
+}
+
+.progress{
+background:#ddd;
+height:20px;
+border-radius:20px;
+overflow:hidden;
+margin-top:8px;
+}
+
+.progress-bar{
+height:100%;
+background:linear-gradient(90deg,#43a047,#81c784);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table th{
+background:#4caf50;
+color:white;
+padding:12px;
+}
+
+table td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.footer{
+text-align:center;
+padding:25px;
+margin-top:30px;
+color:#555;
+}
+
+.badge{
+display:inline-block;
+background:#e8f5e9;
+padding:10px 15px;
+margin:5px;
+border-radius:30px;
+font-weight:bold;
+color:#2e7d32;
+}
+
+.qr{
+text-align:center;
+margin-top:20px;
+}
+
+.qr img{
+width:180px;
+}
+
+@media(max-width:768px){
+.header h1{
+font-size:28px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>🌳 Tree Digital Passport</h1>
+<p>Intent to Solution Pvt Ltd (I2S)</p>
+<p>QR Based Plantation Monitoring System</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" class="tree-photo">
+</div>
+
+<div class="card">
+<h2 class="section-title">🌱 Tree Information</h2>
+
+<div class="grid">
+
+<div class="info-box">
+<i class="fa-solid fa-qrcode"></i>
+<h3>Tree ID</h3>
+<p>CCL-2026-001</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-tree"></i>
+<h3>Tree Name</h3>
+<p>Maha Neem</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-leaf"></i>
+<h3>Scientific Name</h3>
+<p>Azadirachta Indica</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-calendar"></i>
+<h3>Plantation Date</h3>
+<p>18-Jun-2026</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2 class="section-title">📍 GIS Location</h2>
+
+<div class="grid">
+
+<div class="info-box">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Latitude</h3>
+<p>24.123456</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Longitude</h3>
+<p>85.654321</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-map"></i>
+<h3>Village</h3>
+<p>Barkagaon</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-city"></i>
+<h3>District</h3>
+<p>Hazaribagh</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2 class="section-title">📊 Current Status</h2>
+
+<p><span class="status">🟢 Healthy</span></p><br>
+
+<label>Height Growth (75%)</label>
+<div class="progress">
+<div class="progress-bar" style="width:75%"></div>
+</div>
+
+<br>
+
+<label>Canopy Growth (68%)</label>
+<div class="progress">
+<div class="progress-bar" style="width:68%"></div>
+</div>
+
+<br>
+
+<label>Health Score (92%)</label>
+<div class="progress">
+<div class="progress-bar" style="width:92%"></div>
+</div>
+
+</div>
+
+<div class="card">
+<h2 class="section-title">🌍 Environmental Impact</h2>
+
+<div class="grid">
+
+<div class="info-box">
+<i class="fa-solid fa-cloud"></i>
+<h3>CO₂ Absorbed</h3>
+<p>154.5 Kg</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-wind"></i>
+<h3>O₂ Generated</h3>
+<p>112.4 Kg</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-umbrella"></i>
+<h3>Shade Area</h3>
+<p>24.5 Sq.M</p>
+</div>
+
+<div class="info-box">
+<i class="fa-solid fa-earth-asia"></i>
+<h3>Dust Reduction</h3>
+<p>High</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2 class="section-title">📈 Quarterly Growth Report</h2>
+
+<table>
+<tr>
+<th>Quarter</th>
+<th>Height</th>
+<th>Diameter</th>
+<th>Health</th>
+</tr>
+
+<tr>
+<td>Q1</td>
+<td>6 Ft</td>
+<td>8 cm</td>
+<td>Excellent</td>
+</tr>
+
+<tr>
+<td>Q2</td>
+<td>8 Ft</td>
+<td>12 cm</td>
+<td>Excellent</td>
+</tr>
+
+<tr>
+<td>Q3</td>
+<td>10 Ft</td>
+<td>17 cm</td>
+<td>Good</td>
+</tr>
+
+<tr>
+<td>Q4</td>
+<td>12.5 Ft</td>
+<td>22 cm</td>
+<td>Excellent</td>
+</tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2 class="section-title">⛏ Coal Mining Area Benefits</h2>
+
+<div class="badge">🌫 Dust Suppression</div>
+<div class="badge">🌱 Mine Reclamation</div>
+<div class="badge">🌳 Biodiversity</div>
+<div class="badge">💧 Water Retention</div>
+<div class="badge">🌍 Carbon Sequestration</div>
+<div class="badge">🛡 Soil Stabilization</div>
+
+</div>
+
+<div class="card">
+<h2 class="section-title">📷 Maintenance History</h2>
+
+<table>
+<tr>
+<th>Date</th>
+<th>Activity</th>
+<th>Inspector</th>
+</tr>
+
+<tr>
+<td>15-Jul-2026</td>
+<td>Watering</td>
+<td>Ramesh Kumar</td>
+</tr>
+
+<tr>
+<td>20-Aug-2026</td>
+<td>Fertilizer Added</td>
+<td>Suresh Kumar</td>
+</tr>
+
+<tr>
+<td>12-Oct-2026</td>
+<td>Pruning</td>
+<td>Amit Kumar</td>
+</tr>
+
+<tr>
+<td>01-Jan-2027</td>
+<td>Health Inspection</td>
+<td>Vikash Mishra</td>
+</tr>
+
+</table>
+</div>
+
+<div class="card qr">
+<h2 class="section-title">📱 QR Code</h2>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=CCL-2026-001">
+
+<p><b>Scan to View Live Tree Details</b></p>
+</div>
+
+<div class="footer">
+<h3>🌳 Intent to Solution Pvt Ltd (I2S)</h3>
+<p>GIS | Carbon Credit | Plantation Monitoring | ESG Reporting</p>
+<p>© 2026 All Rights Reserved</p>
+</div>
+
+</div>
+
+</body>
+</html>
